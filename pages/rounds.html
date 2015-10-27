@@ -1,0 +1,9 @@
+<div class="jumbotron">
+	<h1>Runder</h1>
+	<form class="form-inline" role="form" ng-submit="createNewRound()">
+	<div ng-show="admin" class="form-group"><button class="btn btn-default" ng-click="showAddRoundForm()">Legg til ny runde</button>
+		<div ng-show="addRoundFormVisible"><input class="form-control" type="text" placeholder="Navn på runden" ng-model="round.name"/>
+		<button class="btn btn-success" type="submit">Legg til</button>
+	</div></div></form>
+	<div id="rounds"></div>
+</div>

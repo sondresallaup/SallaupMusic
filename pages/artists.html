@@ -1,0 +1,9 @@
+<div class="jumbotron">
+	<h1>Artists</h1>
+	<form class="form-inline" role="form" ng-submit="createNewArtist()">
+	<div ng-show="admin" class="form-group"><button class="btn btn-default" ng-click="showAddArtistForm()">Add new artist</button>
+		<div ng-show="addArtistFormVisible"><input class="form-control" type="text" placeholder="Name of artist" ng-model="artist.name"/>
+		<button class="btn btn-success" type="submit">Add</button>
+	</div></div></form>
+	<div id="artists"></div>
+</div>

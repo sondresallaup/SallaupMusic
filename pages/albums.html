@@ -1,0 +1,29 @@
+<div class="jumbotron">
+	<h1>Albums</h1>
+	<form class="form-inline" role="form" ng-submit="createNewAlbum()">
+	<div ng-show="admin" class="form-group"><button class="btn btn-default" ng-click="showAddAlbumForm()">Add new album</button>
+		<div ng-show="addAlbumFormVisible">
+			<input class="form-control" type="text" placeholder="Name of album" ng-model="album.name"/>
+			<select id="artistSelect" ng-model="album.artist"><option value="0">Choose artist</option></select>
+			<select id="ownerSelect" ng-model="album.owner">
+				<option value="Sallaup">Sallaup</option>
+				<option value="Jenssen">Jenssen</option>
+				<option value="Helland">Helland</option>
+				<option value="Dale">Dale</option>
+			</select>
+			<input class="form-control" type="number" placeholder="Release year" ng-model="album.release"/>
+		<button class="btn btn-success" type="submit">Add</button>
+	</div></div></form>
+	<table id="albums" class="table table-striped">
+		<thead>
+			<tr>
+				<th>Artist</th>
+				<th>Album</th>
+				<th>Year</th>
+			</tr>
+		</thead>
+		<tbody>
+
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,18 @@
+<div class="jumbotron">
+	<div id="team"></div>
+    <div ng-show="admin">
+        <button class="btn btn-default" ng-click="editTeam()">Rediger lag</button>
+        <button class="btn btn-danger" ng-click="deleteTeam()">Slett lag</button>
+    </div><br/>
+
+	<table id="teamDataTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Runde</th>
+                <th>Poeng</th>
+                <th>Plassering</th>
+            </tr>
+        </thead>
+        <tbody id="teamDataTableBody">
+        </tbody>
+</div>
